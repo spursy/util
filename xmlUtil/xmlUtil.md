@@ -5,7 +5,7 @@
 ```
 var xmlUtil = require('../xmlUtil')
 
-var xmlData = "<xml><ToUserName>Spursyy</ToUserName><FromUserName>WeiChat</FromUserName><CreateTime>123456789</CreateTime><MsgType>event</MsgType><Event>subscribe</Event></xml>"
+var xmlData = "<xml><ToUserName><Name1>Spursyy</Name1> <Name2>YY</Name2></ToUserName><FromUserName><![CDATA[WeiChat]]></FromUserName><CreateTime>123456789</CreateTime><MsgType><![CDATA[event]]></MsgType><Event><![CDATA[subscribe]]></Event></xml>"
 
 xmlUtil.parseXMLAsync(xmlData).then(function(data) {
     console.log(data)   
