@@ -1,4 +1,4 @@
-var xmlUtil = require('../xmlUtil')
+var xmlUtil = require('../xmlUtil/xmlUtil')
 
 var xmlData = "<xml><ToUserName>Spursyy</ToUserName><FromUserName>WeiChat</FromUserName><CreateTime>123456789</CreateTime><MsgType>event</MsgType><Event>subscribe</Event></xml>"
 
