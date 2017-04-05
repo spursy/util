@@ -1,0 +1,23 @@
+{
+  "name": "utilclass",
+  "version": "1.0.0",
+  "description": "",
+   "dependencies": {
+    "xml2js": "",
+    "bluebird": ""
+  },
+  "main": "xmlUtil.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spursy/util.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spursy/util/issues"
+  },
+  "homepage": "https://github.com/spursy/util#readme"
+}
