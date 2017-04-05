@@ -4,7 +4,8 @@
   "description": "",
    "dependencies": {
     "xml2js": "",
-    "bluebird": ""
+    "bluebird": "",
+    "mocha": ""
   },
   "main": "xmlUtil.js",
   "scripts": {
