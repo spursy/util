@@ -6,7 +6,8 @@
     "bluebird": "",
     "mocha": "",
     "seneca": "^3.3.0",
-    "xml2js": ""
+    "xml2js": "",
+    "seneca-entity": ""
   },
   "main": "xmlUtil.js",
   "scripts": {
