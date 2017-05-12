@@ -16,6 +16,8 @@ exports.findSync = function(name, startPath) {
         }
     }
 
+    console.log('name::' + name);
+    console.log('startPath::' + startPath);
     finder(startPath);
     return results;
 }
