@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/spursy/util/issues"
   },
-  "homepage": "https://github.com/spursy/util#readme"
+  "homepage": "https://github.com/spursy/util#readme",
+  "devDependencies": {
+    "typescript": "^2.3.2"
+  }
 }
