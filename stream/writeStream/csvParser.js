@@ -64,3 +64,7 @@ fs.createReadStream(__dirname + '/sample.csv')
     .pipe(csvParser)
     .pipe(process.stdout)
 
+// fs.createReadStream(__dirname + '/sample.csv')
+//     .pipe(csvParser)
+//     .pipe(fs.createWriteStream(__dirname + '/copySample.csv'))
+
