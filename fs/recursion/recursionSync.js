@@ -5,7 +5,6 @@ exports.findSync = function(name, startPath) {
     var results = [];
     
     function finder(path) {   
-        console.log('path::' + path);
         var files = fs.readdirSync(path);
         for (var i = 0; i < files.length; i ++) {
             var fpath = join(path, files[i]);
