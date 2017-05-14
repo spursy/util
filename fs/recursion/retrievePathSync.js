@@ -1,11 +1,16 @@
 var path = require('path');
-var finder = require('./recursionSync');
+var finderSync = require('./recursionSync');
+var finderAsync = require('./recursionAsync');
 var fpath = path.join(__dirname, '../'); 
 console.log("start::" + fpath);
 
 try {
-    var results = finder.findSync(/re*./, fpath);
-    console.log(results);
+    // var results = finderSync.findSync(/re*./, fpath);
+    //  console.log(results);
+    var results = finderAsync.finderAsync(/re*./, fpath, function (err, results) {
+        if (err) console.log(err);
+        console.log(results);
+    });
 } catch(err) {
     console.error(err);
 }
