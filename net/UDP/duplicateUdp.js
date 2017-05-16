@@ -2,7 +2,7 @@ var assert = require('assert');
 var dgram = require('dgram');
 var fs = require('fs');
 var defaultSize = 16;
-var port = 1234;
+var port = 41234;
 
 function Client(remoteIP) {
     var socket = dgram.createSocket('udp4');
@@ -51,12 +51,10 @@ function Server() {
         for(var client in clients) {
             if (client != clientId) {
                 client = clients[client];
-                server.send(
-                    new Buffer(msg, 0, msg.length, client.port, client.address, function(err, bytes) {
+                server.send(new Buffer(msg), 0, msg.length, client.port, client.address, function(err, bytes) {
                         if (err) console.log(err);
-                        console.log("Bytes sent: " bytes);
-                    } )
-                )
+                        console.log("Bytes sent: " + bytes);
+                })
             }
         }
     })
