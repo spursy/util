@@ -10,7 +10,8 @@
     "seneca-entity": "",
     "typings": "*",
     "xml2js": "",
-    "xss": "^0.3.3"
+    "xss": "^0.3.3",
+    "co": "4.6.0"
   },
   "main": "xmlUtil.js",
   "scripts": {
