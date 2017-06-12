@@ -4,9 +4,8 @@ function filter() {
     if (typeof
      filterFun != 'function') {
         return new Promise(function(resolve, reject) {
-            resolve();
-        });
-        
+            reject();
+        });        
     }
     return new Promise(function (resolve, reject) {
         callParams.push(function() {resolve(arguments);});
