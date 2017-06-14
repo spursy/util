@@ -10,3 +10,4 @@ console.log('resultMap:: ' + resultMap);
 
 // default function destructure
 [1, undefined, 3].map((x = 'yes') => x);
+
