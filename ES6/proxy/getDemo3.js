@@ -5,7 +5,7 @@ var pipe = (function() {
             get: function (pipeObject, fnName) {
                 if (fnName === 'get') {
                     return funcStack.reduce(function(val, fn) {
-                        return fn(val);
+                        return eval(fn + "(" + val + ")");
                     }, value)
                 }
                 funcStack.push(fnName);
