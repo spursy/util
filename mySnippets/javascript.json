@@ -5,18 +5,28 @@
 	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
 	 // Example:
 */	 
-	 "Print to console": {
+	"Print to console": {
 		"prefix": "log",
 		"body": [
-			"console.log('$1');",
-			"$2"
+			"console.log(`$1`);"
+			// ,
+			// "$2"
+		],
+		"description": "Log output to console"
+	},
+	"Error log to console": {
+		"prefix": "error",
+		"body": [
+			"console.error('$1');"
+			// ,
+			// "$2"
 		],
 		"description": "Log output to console"
 	},
 	"Print to require": {
 		"prefix": "require",
 		"body": [
-			"var $1 = require('$2');"
+			"const $1 = require('$2');"
 		],
 		"description": "add require"
 	}
