@@ -11,7 +11,8 @@
     "typings": "*",
     "xml2js": "",
     "xss": "^0.3.3",
-    "co": "4.6.0"
+    "co": "4.6.0",
+    "koa":""
   },
   "main": "xmlUtil.js",
   "scripts": {
