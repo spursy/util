@@ -2,6 +2,8 @@ const Koa = require('Koa');
 const app = module.exports = new Koa();
 const convert = require('koa-convert');
 
+var a = app.inspect()
+
 app.use(convert(function *(next) {
     var start = new Date;
     yield next;
