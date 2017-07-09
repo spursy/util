@@ -12,17 +12,11 @@ function readFileFun(fpath) {
     });
 }
 
-var gen = function *() {
+exports.gen = function *() {
     //yield 后是一个promise对象
     var content1 = yield readFileFun(fpath1); 
     var content2 = yield readFileFun(fpath2);
     console.log(`${content1}`); 
     console.log(`${content2}`); 
 }
-var g = gen();
-g.next().value.then((data) => {
-    // 通过next() 函数向generator 函数体传值
-    g.next(data).value.then((data1) => {
-        g.next(data1);
-    })
-})
+
