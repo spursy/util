@@ -16,6 +16,7 @@ g.next().value((err, data)  => {
     if (err) console.log(`${err}`);
     else {
         console.log(`${data}`);
+        // 将读取到的内容传给写入文件的方法中
         g.next(data).value((err, data) => {
             if (err) console.log(`${err}`);
             else console.log(`${data}`);
