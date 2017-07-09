@@ -12,8 +12,9 @@
     "xml2js": "",
     "xss": "^0.3.3",
     "co": "4.6.0",
-    "koa":"",
-    "koa-router":""
+    "koa": "",
+    "koa-router": "",
+    "thunkify": ""
   },
   "main": "xmlUtil.js",
   "scripts": {
