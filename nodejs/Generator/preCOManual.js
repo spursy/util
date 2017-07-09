@@ -1,3 +1,6 @@
+/**
+ * manual perform generator.
+ */
 var preCO = require('./preCOGenerator');
 var g = preCO.gen();
 g.next().value.then((data) => {

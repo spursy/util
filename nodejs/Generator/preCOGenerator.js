@@ -1,3 +1,6 @@
+/**
+ * Generator 函数体
+ */
 const fs = require('fs');
 const path = require('path');
 var fpath1 = path.join(__dirname, './test1.txt');
