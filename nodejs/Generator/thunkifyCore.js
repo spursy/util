@@ -22,6 +22,7 @@ function thunkify(fn) {
 
       try {
         fn.apply(ctx, args);
+        // fn(args);
       } catch (err) {
         done(err);
       }
