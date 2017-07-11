@@ -1,1 +1,4 @@
-I am spursyy.
+function (error, data) {
+            if (error) reject(error);
+            resolve(data);
+        }

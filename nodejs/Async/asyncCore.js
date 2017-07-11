@@ -22,34 +22,31 @@ function writeFile(fpath, content) {
 }
 
 function spawn(gen) {
+    var ctx = this;
     return new Promise(function(resolve, reject) {
         var ctx = this;
         var isValid = (typeof(gen) === 'function');
-        var g = gen();
+        // var g = gen();
+        var g = gen.call(ctx);
         function step(nextFun) {
             var next;
             try {
-                next = nextFun.value();
+                next = nextFun();
             } catch (error) {
                 return reject(error);
             }
-            if (next.done) return resolve(done);
+            if (next.done) return resolve(next.value);
 
             Promise.resolve(next.value).then(
-                result => step(gen.next(result)),
-                error => step(gen.throw(e))
+                result => step(function(){ return g.next(result)}),
+                error => step(function(){return g.throw(e)})
             )
         }
-        step(g.next());
+        step(function() { return g.next(undefined); });
     });
 }
 
 spawn(function *() {
     var contet = yield readFile(fpath1);
-    // yield writeFile(fpath2, contet);
+    yield writeFile(fpath2, contet);
 });
-
-// var gen = function *() {
-//     var data = yield readFileThunify(fpath1);
-//     yield writeFileThunify(fpath2, data);
-// }
