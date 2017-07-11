@@ -26,9 +26,9 @@ function spawn(gen) {
     return new Promise(function(resolve, reject) {
         var ctx = this;
         var isValid = (typeof(gen) === 'function');
-        // var g = gen();
         var g = gen.call(ctx);
         function step(nextFun) {
+            var isValid = (typeof nextFun === 'function');
             var next;
             try {
                 next = nextFun();
