@@ -2,7 +2,8 @@
   "name": "utilclass",
   "version": "1.0.0",
   "description": "",
-  "dependencies": {
+  "dependencies": {},
+  "devdependencies": {
     "bluebird": "",
     "express": "^4.15.2",
     "mocha": "",
