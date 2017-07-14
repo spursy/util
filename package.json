@@ -14,21 +14,8 @@
     "co": "4.6.0",
     "koa": "",
     "koa-router": "",
-    "thunkify": ""
-  },
-  "devdependencies": {
-    "bluebird": "",
-    "express": "^4.15.2",
-    "mocha": "",
-    "seneca": "^3.3.0",
-    "seneca-entity": "",
-    "typings": "*",
-    "xml2js": "",
-    "xss": "^0.3.3",
-    "co": "4.6.0",
-    "koa": "",
-    "koa-router": "",
-    "thunkify": ""
+    "thunkify": "",
+    "delegates": ""
   },
   "main": "xmlUtil.js",
   "scripts": {
