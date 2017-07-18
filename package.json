@@ -15,7 +15,8 @@
     "koa": "",
     "koa-router": "",
     "thunkify": "",
-    "delegates": ""
+    "delegates": "",
+    "mongoose": ""
   },
   "main": "xmlUtil.js",
   "scripts": {
