@@ -1,1 +1,0 @@
-{"position":"hijk","letter":4400 }  /n {"position":"asdasd","letter":7200 } /n
